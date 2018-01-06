@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    OnePlusDoze
+    OneplusThreeDoze
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
