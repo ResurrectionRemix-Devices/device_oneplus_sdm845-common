@@ -40,6 +40,9 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_BOOTLOADER_BOARD_NAME := sdm845
 TARGET_NO_BOOTLOADER := true
 
+# Compile bionic with optimization
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
