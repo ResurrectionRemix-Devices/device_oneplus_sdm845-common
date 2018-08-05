@@ -23,7 +23,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=true \
-	camera.hal1.packagelist=com.oneplus.camera
+	camera.hal1.packagelist=com.oneplus.camera \
+	persist.sys.camera.preview.size=1920x1080
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
