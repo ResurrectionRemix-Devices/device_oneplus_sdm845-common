@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.pocketmode;
+package com.cyanogenmod.pocketmode;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -25,7 +25,7 @@ import android.hardware.SensorManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.lineageos.internal.util.FileUtils;
+import com.android.internal.util.liquid.FileUtils;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.pocketmode;
+package com.cyanogenmod.pocketmode;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -22,7 +22,8 @@ import android.content.Intent;
 import android.util.Log;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-    private static final String TAG = "OnePlusPocketMode";
+
+    private static final String TAG = "OneplusPocketMode";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
