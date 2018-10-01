@@ -5,6 +5,7 @@ on init
 #    mount none /system/lib64/hw/hwcomposer.qcom.so /vendor/lib64/hw/hwcomposer.sdm845.so bind
     mount none /system/lib/modules/wlan.ko /vendor/lib/modules-aging/qca_cld3_wlan.ko bind
     mount none /system/lib/modules/wlan.ko /vendor/lib/modules/qca_cld3_wlan.ko bind
+    mount none /system/etc/WCNSS_qcom_cfg.ini /vendor/etc/wifi/WCNSS_qcom_cfg.ini bind
 
 on boot
     # default country code
