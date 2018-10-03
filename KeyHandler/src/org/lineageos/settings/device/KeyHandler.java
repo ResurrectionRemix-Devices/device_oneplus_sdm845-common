@@ -42,7 +42,7 @@ public class KeyHandler implements DeviceKeyHandler {
         mVibrator = mContext.getSystemService(Vibrator.class);
     }
 
-    public KeyEvent handleKeyEvent(KeyEvent event) {
+    public boolean handleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
 
         switch (scanCode) {
@@ -56,11 +56,11 @@ public class KeyHandler implements DeviceKeyHandler {
                 mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
                 break;
             default:
-                return event;
+                return false;
         }
         doHapticFeedback();
 
-        return null;
+        return true;
     }
 
     private void doHapticFeedback() {
