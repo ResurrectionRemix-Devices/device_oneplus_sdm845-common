@@ -1,0 +1,3 @@
+-keep class org.resurrection.device.DeviceSettings.* {
+  *;
+}
