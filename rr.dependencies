@@ -1,6 +1,18 @@
 [
   {
-    "repository"   :  "kernel_oneplus_sdm845",
-    "target_path"  :  "kernel/oneplus/sdm845"
+    "repository"  : "device_oneplus_common",
+    "target_path" : "device/oneplus/common"
+  },
+  {
+    "repository"  : "kernel_oneplus_sdm845",
+    "target_path" : "kernel/oneplus/sdm845"
+  },
+  {
+    "repository"  : "vendor_oneplus",
+    "target_path" : "vendor/oneplus"
+  },
+  {
+    "repository"  : "vendor_oneplus_camera",
+    "target_path" : "vendor/oneplus/camera"
   }
 ]
