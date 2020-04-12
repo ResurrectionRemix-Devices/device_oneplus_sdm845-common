@@ -18,6 +18,10 @@
     "branch"      : "master"
   },
   {
+    "repository"  : "vendor_google_camera",
+    "target_path" : "vendor/google/camera"
+  },
+  {
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus"
   },
