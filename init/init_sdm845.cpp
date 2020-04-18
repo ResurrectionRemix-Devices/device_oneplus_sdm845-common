@@ -59,4 +59,9 @@ void vendor_load_properties()
 {
     // Property Overrides
     property_override("ro.control_privapp_permissions", "log");
+
+    // Maintainer props
+    property_override("org.evolution.build_donate_url", "https://paypal.me/AnierinBliss");
+    property_override("org.evolution.build_maintainer", "Anierin Bliss");
+    property_override("org.evolution.build_support_url", "https://t.me/EvolutionXOnePlus");
 }
