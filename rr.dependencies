@@ -1,0 +1,6 @@
+[
+  {
+    "repository"   :  "kernel_oneplus_sdm845",
+    "target_path"  :  "kernel/oneplus/sdm845"
+  }
+]

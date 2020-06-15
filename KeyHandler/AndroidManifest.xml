@@ -16,5 +16,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="org.lineageos.settings.device">
+          package="org.resurrection.settings.device">
 </manifest>
