@@ -27,6 +27,8 @@
   },
   {
     "repository"  : "vendor_oneplus_camera",
-    "target_path" : "vendor/oneplus/camera"
+    "target_path" : "vendor/oneplus/camera",
+    "branch"      : "sdm845",
+    "clone-depth" : "1"
   }
 ]
