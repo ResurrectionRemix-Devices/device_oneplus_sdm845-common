@@ -31,37 +31,33 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
-#include <android-base/properties.h>
 #include "property_service.h"
 #include "vendor_init.h"
+#include <android-base/properties.h>
 
 using android::init::property_set;
 
 void property_override(char const prop[], char const value[])
 {
-    prop_info *pi;
+	prop_info *pi;
 
-    pi = (prop_info*) __system_property_find(prop);
-    if (pi)
-        __system_property_update(pi, value, strlen(value));
-    else
-        __system_property_add(prop, strlen(prop), value, strlen(value));
+	pi = (prop_info *)__system_property_find(prop);
+	if (pi)
+		__system_property_update(pi, value, strlen(value));
+	else
+		__system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-    char const value[])
+void property_override_dual(char const system_prop[], char const vendor_prop[], char const value[])
 {
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
+	property_override(system_prop, value);
+	property_override(vendor_prop, value);
 }
 
 void vendor_load_properties()
 {
-    // Property Overrides
-    property_override("ro.control_privapp_permissions", "log");
-
-    // Maintainer props
-    property_override("org.evolution.build_donate_url", "https://paypal.me/AnierinBliss");
-    property_override("org.evolution.build_maintainer", "Anierin Bliss");
-    property_override("org.evolution.build_support_url", "https://t.me/EvolutionXOnePlus");
+	// Maintainer props
+	property_override("org.evolution.build_donate_url", "https://paypal.me/AnierinBliss");
+	property_override("org.evolution.build_maintainer", "Anierin Bliss");
+	property_override("org.evolution.build_support_url", "https://t.me/EvolutionXOnePlus");
 }
