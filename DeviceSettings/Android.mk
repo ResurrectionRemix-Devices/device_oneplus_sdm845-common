@@ -28,7 +28,11 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
-    androidx.preference_preference
+    androidx.preference_preference \
+    airbnb-lottie
+
+LOCAL_JAVA_LIBRARIES := \
+    airbnb-lottie
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     vendor.oneplus.camera.CameraHIDL-V1.0-java
