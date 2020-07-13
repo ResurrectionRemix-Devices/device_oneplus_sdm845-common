@@ -18,16 +18,16 @@
     "branch"      : "master"
   },
   {
-    "repository"  : "vendor_google_camera",
-    "target_path" : "vendor/google/camera"
+    "repository"  : "vendor_addons_google_camera",
+    "target_path" : "vendor/addons/google/camera"
   },
   {
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus"
   },
   {
-    "repository"  : "vendor_oneplus_camera",
-    "target_path" : "vendor/oneplus/camera",
+    "repository"  : "vendor_addons_oneplus_camera",
+    "target_path" : "vendor/addons/oneplus/camera",
     "branch"      : "sdm845",
     "clone-depth" : "1"
   }
