@@ -12,9 +12,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.evolution.settings.doze/org.evolution.settings.doze.DozeSettingsActivity</string>
-
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
 </resources>
