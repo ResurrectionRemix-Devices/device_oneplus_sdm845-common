@@ -4,31 +4,28 @@
     "target_path" : "device/oneplus/common"
   },
   {
+    "repository"  : "kdrag0n/proton-clang",
+    "branch"      : "master",
+    "remote"      : "github",
+    "clone_depth" : "1",
+    "target_path" : "prebuilts/clang/host/linux-x86/clang-proton"
+  },
+  {
     "repository"  : "kernel_oneplus_sdm845",
     "target_path" : "kernel/oneplus/sdm845"
-  },
-  {
-    "repository"  : "prebuilts_gcc_linux-x86_arm_arm-eabi",
-    "target_path" : "prebuilts/gcc/linux-x86/arm/arm-eabi",
-    "branch"      : "master"
-  },
-  {
-    "repository"  : "prebuilts_gcc_linux-x86_aarch64_aarch64-elf",
-    "target_path" : "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
-    "branch"      : "master"
   },
   {
     "repository"  : "vendor_addons_google_camera",
     "target_path" : "vendor/addons/google/camera"
   },
   {
-    "repository"  : "vendor_oneplus",
-    "target_path" : "vendor/oneplus"
+    "repository"  : "vendor_addons_oneplus_camera",
+    "branch"      : "sdm845",
+    "clone-depth" : "1",
+    "target_path" : "vendor/addons/oneplus/camera"
   },
   {
-    "repository"  : "vendor_addons_oneplus_camera",
-    "target_path" : "vendor/addons/oneplus/camera",
-    "branch"      : "sdm845",
-    "clone-depth" : "1"
+    "repository"  : "vendor_oneplus",
+    "target_path" : "vendor/oneplus"
   }
 ]
