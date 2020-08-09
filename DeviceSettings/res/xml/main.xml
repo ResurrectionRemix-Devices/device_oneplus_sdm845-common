@@ -152,6 +152,21 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="speaker"
+        android:title="@string/speaker_category">
+
+        <Preference
+            android:key="clear_speaker_settings" 
+            android:icon="@drawable/ic_speaker_cleaner_icon"
+            android:title="@string/clear_speaker_title" >
+            <intent 
+                android:action="android.intent.action.MAIN" 
+                android:targetClass="org.evolution.device.DeviceSettings.speaker.ClearSpeakerActivity"
+                android:targetPackage="org.evolution.device.DeviceSettings.speaker" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/category_vibrator">
         <org.evolution.device.DeviceSettings.VibratorStrengthPreference
             android:key="vib_strength"

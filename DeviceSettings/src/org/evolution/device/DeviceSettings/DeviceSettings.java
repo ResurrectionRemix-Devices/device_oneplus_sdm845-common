@@ -50,6 +50,7 @@ import org.evolution.device.DeviceSettings.FileUtils;
 import org.evolution.device.DeviceSettings.R;
 import org.evolution.device.DeviceSettings.SuShell;
 import org.evolution.device.DeviceSettings.SuTask;
+import org.evolution.device.DeviceSettings.speaker.ClearSpeakerActivity;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -75,6 +76,7 @@ public class DeviceSettings extends PreferenceFragment
     private static final String SELINUX_CATEGORY = "selinux";
     private static final String PREF_SELINUX_MODE = "selinux_mode";
     private static final String PREF_SELINUX_PERSISTENCE = "selinux_persistence";
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
@@ -85,6 +87,7 @@ public class DeviceSettings extends PreferenceFragment
     private static SwitchPreference mFpsInfo;
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
+    private Preference mClearSpeakerPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -156,6 +159,13 @@ public class DeviceSettings extends PreferenceFragment
         .getSharedPreferences("selinux_pref", Context.MODE_PRIVATE)
         .contains(PREF_SELINUX_MODE));
         mSelinuxPersistence.setEnabled(isRooted);
+
+        mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
+        mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
+            startActivity(intent);
+            return true;
+        });
     }
 
     @Override
