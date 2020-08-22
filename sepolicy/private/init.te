@@ -3,8 +3,11 @@ allow init vendor_configs_file:dir mounton;
 
 # Allow init to chown/chmod on pseudo files in /sys
 allow init {
+    sysfs_egain
     sysfs_fod
     sysfs_graphics
+    sysfs_mgain
+    sysfs_sgain
 }:file { open read setattr };
 
 allow init sysfs_battery_supply:file { setattr };

@@ -78,6 +78,13 @@ public class DeviceSettings extends PreferenceFragment
     private static final String PREF_SELINUX_PERSISTENCE = "selinux_persistence";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
+    public static final String PREF_EARPIECE_GAIN = "earpiece_gain";
+    public static final String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
+    public static final String PREF_MICROPHONE_GAIN = "microphone_gain";
+    public static final String MICROPHONE_GAIN_PATH = "/sys/kernel/sound_control/mic_gain";
+    public static final String PREF_SPEAKER_GAIN = "speaker_gain";
+    public static final String SPEAKER_GAIN_PATH = "/sys/kernel/sound_control/speaker_gain";
+
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mDCModeSwitch;
@@ -88,6 +95,9 @@ public class DeviceSettings extends PreferenceFragment
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
     private Preference mClearSpeakerPref;
+    private ProperSeekBarPreference mEarpieceGain;
+    private ProperSeekBarPreference mMicrophoneGain;
+    private ProperSeekBarPreference mSpeakerGain;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -166,6 +176,15 @@ public class DeviceSettings extends PreferenceFragment
             startActivity(intent);
             return true;
         });
+
+        mEarpieceGain = (ProperSeekBarPreference) findPreference(PREF_EARPIECE_GAIN);
+        mEarpieceGain.setOnPreferenceChangeListener(this);
+
+        mMicrophoneGain = (ProperSeekBarPreference) findPreference(PREF_MICROPHONE_GAIN);
+        mMicrophoneGain.setOnPreferenceChangeListener(this);
+
+        mSpeakerGain = (ProperSeekBarPreference) findPreference(PREF_SPEAKER_GAIN);
+        mSpeakerGain.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -189,6 +208,12 @@ public class DeviceSettings extends PreferenceFragment
             setSelinuxEnabled(enabled, mSelinuxPersistence.isChecked());
         } else if (preference == mSelinuxPersistence) {
             setSelinuxEnabled(mSelinuxMode.isChecked(), (Boolean) newValue);
+        } else if (preference == mEarpieceGain) {    
+            FileUtils.setValue(EARPIECE_GAIN_PATH, newValue + " " + newValue); 
+        } else if (preference == mMicrophoneGain) {    
+            FileUtils.setValue(MICROPHONE_GAIN_PATH, newValue + " " + newValue);             
+        } else if (preference == mSpeakerGain) {    
+            FileUtils.setValue(SPEAKER_GAIN_PATH, newValue + " " + newValue);       
         } else {
             Constants.setPreferenceInt(getContext(), preference.getKey(), Integer.parseInt((String) newValue));
         }

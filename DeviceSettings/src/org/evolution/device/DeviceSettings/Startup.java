@@ -30,6 +30,7 @@ import android.util.Log;
 import android.widget.Toast;
 import java.util.List;
 
+import org.evolution.device.DeviceSettings.FileUtils;
 import org.evolution.device.DeviceSettings.thermal.ThermalUtils;
 
 public class Startup extends BroadcastReceiver {
@@ -48,6 +49,8 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
 
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
+
+        mContext = context;
 
         VibratorStrengthPreference.restore(context);
         VibratorCallStrengthPreference.restore(context);
@@ -80,6 +83,13 @@ public class Startup extends BroadcastReceiver {
         mHBM = false;
         restore(WideModeSwitch.getFile(), enabled);
                }
+
+        FileUtils.setValue(DeviceSettings.EARPIECE_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
+                DeviceSettings.PREF_EARPIECE_GAIN, 0));
+        FileUtils.setValue(DeviceSettings.MICROPHONE_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
+                DeviceSettings.PREF_MICROPHONE_GAIN, 0));
+        FileUtils.setValue(DeviceSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
+                DeviceSettings.PREF_SPEAKER_GAIN, 0));
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_FPS_INFO, false);
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
