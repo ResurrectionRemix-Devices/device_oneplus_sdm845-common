@@ -83,8 +83,8 @@
     <string name="thermal_streaming">Streaming</string>
 
     <!-- Selinux Switch -->
+    <string name="selinux_title">SELinux</string>
     <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk (will be grayed out if su not found!).</string>
-    <string name="selinux_category">SELinux</string>
     <string name="selinux_mode_title">SELinux mode</string>
     <string name="selinux_permissive_summary">Permissive</string>
     <string name="selinux_enforcing_summary">Enforcing</string>
@@ -94,8 +94,8 @@
     <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
     <string name="cannot_get_su">Action failed because of missing superuser access</string>
 
-    <!-- Speaker -->
-    <string name="speaker_category">Speaker</string>
+    <!-- Audio -->
+    <string name="audio_title">Audio</string>
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>

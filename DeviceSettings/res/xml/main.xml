@@ -12,6 +12,21 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
+        android:key="audio"
+        android:title="@string/audio_title">
+
+        <Preference
+            android:key="clear_speaker_settings" 
+            android:icon="@drawable/ic_speaker_cleaner_icon"
+            android:title="@string/clear_speaker_title" >
+            <intent 
+                android:action="android.intent.action.MAIN" 
+                android:targetClass="org.evolution.device.DeviceSettings.speaker.ClearSpeakerActivity"
+                android:targetPackage="org.evolution.device.DeviceSettings.speaker" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="graphics"
         android:title="@string/display_title">
 
@@ -130,7 +145,7 @@
 
     <PreferenceCategory
         android:key="selinux"
-        android:title="@string/selinux_category">
+        android:title="@string/selinux_title">
 
        <Preference
           android:summary="@string/selinux_explanation_summary"
@@ -149,21 +164,6 @@
           android:title="@string/selinux_persistence_title"
           android:summary="@string/selinux_persistence_summary"
           android:defaultValue="true" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="speaker"
-        android:title="@string/speaker_category">
-
-        <Preference
-            android:key="clear_speaker_settings" 
-            android:icon="@drawable/ic_speaker_cleaner_icon"
-            android:title="@string/clear_speaker_title" >
-            <intent 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="org.evolution.device.DeviceSettings.speaker.ClearSpeakerActivity"
-                android:targetPackage="org.evolution.device.DeviceSettings.speaker" />
-        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
