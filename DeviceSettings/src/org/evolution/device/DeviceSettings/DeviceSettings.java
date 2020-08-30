@@ -56,6 +56,7 @@ import org.evolution.device.DeviceSettings.preferences.ProperSeekBarPreference;
 import org.evolution.device.DeviceSettings.preferences.VibratorCallStrengthPreference;
 import org.evolution.device.DeviceSettings.preferences.VibratorNotifStrengthPreference;
 import org.evolution.device.DeviceSettings.preferences.VibratorStrengthPreference;
+import org.evolution.device.DeviceSettings.thermal.ThermalActivity;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -83,6 +84,7 @@ public class DeviceSettings extends PreferenceFragment
     private static final String PREF_SELINUX_PERSISTENCE = "selinux_persistence";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
     private static final String PREF_DOZE = "advanced_doze_settings";
+    private static final String PREF_THERMAL_PROFILES = "thermal_profiles";
 
     public static final String PREF_EARPIECE_GAIN = "earpiece_gain";
     public static final String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
@@ -102,6 +104,7 @@ public class DeviceSettings extends PreferenceFragment
     private SwitchPreference mSelinuxPersistence;
     private Preference mClearSpeakerPref;
     private Preference mDozeSettings;
+    private Preference mThermalProfiles;
     private ProperSeekBarPreference mEarpieceGain;
     private ProperSeekBarPreference mMicrophoneGain;
     private ProperSeekBarPreference mSpeakerGain;
@@ -187,6 +190,13 @@ public class DeviceSettings extends PreferenceFragment
         mDozeSettings = (Preference)findPreference(PREF_DOZE);
         mDozeSettings.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), DozeSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
+        mThermalProfiles = (Preference)findPreference(PREF_THERMAL_PROFILES);
+        mThermalProfiles.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ThermalActivity.class);
             startActivity(intent);
             return true;
         });
