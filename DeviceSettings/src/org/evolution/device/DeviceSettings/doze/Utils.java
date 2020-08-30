@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.evolution.settings.doze;
+package org.evolution.device.DeviceSettings.doze;
 
 import android.content.Context;
 import android.content.Intent;
@@ -61,7 +61,7 @@ public final class Utils {
                 UserHandle.CURRENT);
     }
 
-    protected static void checkDozeService(Context context) {
+    public static void checkDozeService(Context context) {
         if (isDozeEnabled(context) && !isAlwaysOnEnabled(context) && areGesturesEnabled(context) && sensorsEnabled(context)) {
             startService(context);
         } else {

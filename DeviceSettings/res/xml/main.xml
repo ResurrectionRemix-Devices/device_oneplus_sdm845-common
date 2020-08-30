@@ -97,13 +97,12 @@
         <Preference
             android:key="advanced_doze_settings"
             android:icon="@drawable/ic_doze"
-            android:persistent="false"
             android:title="@string/doze_settings_title"
-            android:summary="@string/doze_settings_summary">
-            <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="org.evolution.settings.doze" 
-                    android:targetClass="org.evolution.settings.doze.DozeSettingsActivity"/>
+            android:summary="@string/doze_settings_summary"
+            android:persistent="false" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.evolution.device.DeviceSettings.doze"
+                    android:targetClass="org.evolution.device.DeviceSettings.doze.DozeSettingsActivity" />
         </Preference>
     </PreferenceCategory>
 

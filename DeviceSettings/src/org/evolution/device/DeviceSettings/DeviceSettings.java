@@ -51,10 +51,11 @@ import org.evolution.device.DeviceSettings.R;
 import org.evolution.device.DeviceSettings.SuShell;
 import org.evolution.device.DeviceSettings.SuTask;
 import org.evolution.device.DeviceSettings.speaker.ClearSpeakerActivity;
+import org.evolution.device.DeviceSettings.doze.DozeSettingsActivity;
 import org.evolution.device.DeviceSettings.preferences.ProperSeekBarPreference;
-import org.evolution.device.DeviceSettings.preferences.VibratorStrengthPreference;
-import org.evolution.device.DeviceSettings.preferences.VibratorNotifStrengthPreference;
 import org.evolution.device.DeviceSettings.preferences.VibratorCallStrengthPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorNotifStrengthPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorStrengthPreference;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -81,6 +82,7 @@ public class DeviceSettings extends PreferenceFragment
     private static final String PREF_SELINUX_MODE = "selinux_mode";
     private static final String PREF_SELINUX_PERSISTENCE = "selinux_persistence";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+    private static final String PREF_DOZE = "advanced_doze_settings";
 
     public static final String PREF_EARPIECE_GAIN = "earpiece_gain";
     public static final String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
@@ -99,6 +101,7 @@ public class DeviceSettings extends PreferenceFragment
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
     private Preference mClearSpeakerPref;
+    private Preference mDozeSettings;
     private ProperSeekBarPreference mEarpieceGain;
     private ProperSeekBarPreference mMicrophoneGain;
     private ProperSeekBarPreference mSpeakerGain;
@@ -177,6 +180,13 @@ public class DeviceSettings extends PreferenceFragment
         mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
         mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
+        mDozeSettings = (Preference)findPreference(PREF_DOZE);
+        mDozeSettings.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), DozeSettingsActivity.class);
             startActivity(intent);
             return true;
         });

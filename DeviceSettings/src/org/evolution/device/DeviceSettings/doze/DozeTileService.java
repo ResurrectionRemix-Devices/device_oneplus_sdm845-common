@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.evolution.settings.doze;
+package org.evolution.device.DeviceSettings.doze;
 
 import android.annotation.TargetApi;
 import android.content.Intent;

@@ -51,6 +51,14 @@
         <item name="android:layout">@layout/preference_material_settings</item>
     </style>
 
+    <style name="Theme.Main.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar">
+    </style>
+
+    <style name="Theme.Main.SwitchBar.Switch">
+        <item name="android:trackTint">@color/switchbar_switch_track_tint</item>
+        <item name="android:thumbTint">@color/switchbar_switch_thumb_tint</item>
+    </style>
+
     <style name="Theme.Main.PreferenceTheme">
     </style>
 

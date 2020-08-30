@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.evolution.settings.doze;
+package org.evolution.device.DeviceSettings.doze;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
