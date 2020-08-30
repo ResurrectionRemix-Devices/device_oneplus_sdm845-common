@@ -97,8 +97,8 @@
         <Preference
             android:key="advanced_doze_settings"
             android:icon="@drawable/ic_doze"
-            android:title="@string/doze_settings_title"
-            android:summary="@string/doze_settings_summary"
+            android:title="@string/ambient_display_gestures_title"
+            android:summary="@string/ambient_display_gestures_summary"
             android:persistent="false" >
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="org.evolution.device.DeviceSettings.doze"
@@ -137,7 +137,7 @@
 
     <PreferenceCategory
         android:key="slider"
-        android:title="@string/notification_slider_category_title">
+        android:title="@string/notification_slider_title">
 
         <ListPreference
             android:key="keycode_top_position"
@@ -207,7 +207,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/category_vibrator">
+        android:title="@string/vibrator_title">
         <org.evolution.device.DeviceSettings.preferences.VibratorStrengthPreference
             android:key="vib_strength"
             android:icon="@drawable/ic_vibration_icon"

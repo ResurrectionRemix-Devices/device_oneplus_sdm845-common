@@ -14,6 +14,15 @@
     <string name="device_title">Device Extras</string>
     <string name="device_summary">Adjust device specific settings</string>
 
+    <!-- Audio -->
+    <string name="audio_title">Audio</string>
+    <string name="clear_speaker_title">Clear speaker</string>
+    <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
+    <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
+    <string name="earpiece_gain">Earpiece gain (Calls)</string>
+    <string name="microphone_gain">Microphone gain</string>
+    <string name="speaker_gain">Speaker gain</string>
+
     <!-- Display modes -->
     <string name="display_title">Display modes</string>
     <string name="display_summary">Adjust settings and preferences for display</string>
@@ -40,11 +49,37 @@
 
     <!-- Doze -->
     <string name="doze_panel_title">Doze</string>
-    <string name="doze_settings_title">Advanced doze settings</string>
-    <string name="doze_settings_summary">Handle sensor related wake events</string>
+    <string name="ambient_display_gestures_title">Ambient display gestures</string>
+    <string name="ambient_display_gestures_summary">Additional gestures to wake the screen</string>
+    <string name="doze_settings_help_title">Help</string>
+    <string name="doze_settings_help_text">These features use sensor events to launch a doze notification pulse. The chosen sensor is only enabled when the device receives a notification, this helps to reduce battery usage. There is also an option to enable the chosen sensor as soon as the screen turns off, this will cause higher battery usage.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="switch_bar_off">Off</string>
+    <string name="switch_bar_on">On</string>
+    <string name="ambient_display_title">Ambient display</string>
+    <string name="ambient_display_always_on_title">Always on</string>
+    <string name="ambient_display_always_on_summary">Show time, notification icons, and other info. Increased battery usage.</string>
+    <string name="pickup_sensor_title">Pickup sensor</string>
+    <string name="pick_up_gesture_title">Pick-up</string>
+    <string name="pick_up_gesture_summary">Pulse notifications on pick-up</string>
+    <string name="raise_to_wake_gesture_title">Raise to wake</string>
+    <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
+    <string name="proximity_sensor_title">Proximity sensor</string>
+    <string name="pocket_gesture_title">Pocket</string>
+    <string name="pocket_gesture_summary">Pulse notifications on removal from pocket</string>
+
+    <!-- FPS info -->
+    <string name="fps_title">Measured FPS</string>
+    <string name="fps_info_title">FPS overlay</string>
+    <string name="fps_info_summary">Show overlay with with current frames per second</string>
+
+    <!-- TouchScreen gestures -->
+    <string name="screen_gestures_panel_title">Gestures</string>
+    <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
+    <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
 
     <!-- Notification slider -->
-    <string name="notification_slider_category_title">Notification slider</string>
+    <string name="notification_slider_title">Notification slider</string>
     <string name="notification_slider_selection_dialog_title">Action</string>
     <string name="notification_slider_top_position">Top position</string>
     <string name="notification_slider_middle_position">Middle position</string>
@@ -56,32 +91,6 @@
     <string name="notification_slider_mode_vibrate">Vibrate</string>
     <string name="notification_slider_mode_none">Normal</string>
     <string name="buttons_dashboard_summary">Alert Slider Settings</string>
-
-    <!-- Vibration control -->
-    <string name="category_vibrator">Vibrator</string>
-    <string name="vib_strength_title_head">System Strength</string>
-    <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
-    <string name="vib_call_strength_title_head">Call Strength</string>
-    <string name="vib_call_strength_summary_head">Define the strength of the vibrator during an incoming call</string>
-    <string name="vib_notif_strength_title_head">Notification Strength</string>
-    <string name="vib_notif_strength_summary_head">Define the strength of the vibrator during an incoming notification</string>
-
-    <!-- FPS info -->
-    <string name="fps_title">Measured FPS</string>
-    <string name="fps_info_title">FPS overlay</string>
-    <string name="fps_info_summary">Show overlay with with current frames per second</string>
-
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Thermal</string>
-    <string name="thermal_profiles_title">Thermal profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
-    <string name="thermal_default">Default</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Browser</string>
-    <string name="thermal_camera">Camera</string>
-    <string name="thermal_dialer">Dialer</string>
-    <string name="thermal_gaming">Gaming</string>
-    <string name="thermal_streaming">Streaming</string>
 
     <!-- Selinux Switch -->
     <string name="selinux_title">SELinux</string>
@@ -95,12 +104,24 @@
     <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
     <string name="cannot_get_su">Action failed because of missing superuser access</string>
 
-    <!-- Audio -->
-    <string name="audio_title">Audio</string>
-    <string name="clear_speaker_title">Clear speaker</string>
-    <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
-    <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
-    <string name="earpiece_gain">Earpiece gain (Calls)</string>
-    <string name="microphone_gain">Microphone gain</string>
-    <string name="speaker_gain">Speaker gain</string>
+    <!-- Thermal profiles -->
+    <string name="thermal_title">Thermal</string>
+    <string name="thermal_profiles_title">Thermal profiles</string>
+    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
+    <string name="thermal_default">Default</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_browser">Browser</string>
+    <string name="thermal_camera">Camera</string>
+    <string name="thermal_dialer">Dialer</string>
+    <string name="thermal_gaming">Gaming</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Vibration control -->
+    <string name="vibrator_title">Vibrator</string>
+    <string name="vib_strength_title_head">System Strength</string>
+    <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
+    <string name="vib_call_strength_title_head">Call Strength</string>
+    <string name="vib_call_strength_summary_head">Define the strength of the vibrator during an incoming call</string>
+    <string name="vib_notif_strength_title_head">Notification Strength</string>
+    <string name="vib_notif_strength_summary_head">Define the strength of the vibrator during an incoming notification</string>
 </resources>
