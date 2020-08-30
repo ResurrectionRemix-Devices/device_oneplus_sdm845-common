@@ -51,6 +51,10 @@ import org.evolution.device.DeviceSettings.R;
 import org.evolution.device.DeviceSettings.SuShell;
 import org.evolution.device.DeviceSettings.SuTask;
 import org.evolution.device.DeviceSettings.speaker.ClearSpeakerActivity;
+import org.evolution.device.DeviceSettings.preferences.ProperSeekBarPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorStrengthPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorNotifStrengthPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorCallStrengthPreference;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {

@@ -16,7 +16,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.evolution.device.DeviceSettings;
+package org.evolution.device.DeviceSettings.preferences;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -32,6 +32,9 @@ import android.os.Vibrator;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceViewHolder;
+import org.evolution.device.DeviceSettings.R;
+import org.evolution.device.DeviceSettings.DeviceSettings;
+import org.evolution.device.DeviceSettings.Utils;
 
 public class VibratorCallStrengthPreference extends Preference implements
         SeekBar.OnSeekBarChangeListener {

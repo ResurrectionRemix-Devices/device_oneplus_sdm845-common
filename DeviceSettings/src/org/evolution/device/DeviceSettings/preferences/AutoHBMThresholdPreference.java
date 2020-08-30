@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.evolution.device.DeviceSettings;
+package org.evolution.device.DeviceSettings.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -25,6 +25,7 @@ import android.util.Log;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceViewHolder;
+import org.evolution.device.DeviceSettings.DeviceSettings;
 
 public class AutoHBMThresholdPreference extends ProperSeekBarPreference {
 

@@ -3,9 +3,6 @@ package org.evolution.device.DeviceSettings.preferences;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.evolution.device.DeviceSettings.ProperSeekBarPreference;
-import org.evolution.device.DeviceSettings.preferences.SecureSettingsStore;
-
 public class SecureSettingProperSeekBarPreference extends ProperSeekBarPreference {
 
     public SecureSettingProperSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {

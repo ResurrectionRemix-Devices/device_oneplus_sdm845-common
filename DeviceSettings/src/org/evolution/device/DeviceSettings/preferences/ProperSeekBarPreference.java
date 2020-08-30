@@ -1,7 +1,7 @@
 // let's make nice and clear,
 // proper seekbar preference.
 
-package org.evolution.device.DeviceSettings;
+package org.evolution.device.DeviceSettings.preferences;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import org.evolution.device.DeviceSettings.R;
 
 public class ProperSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener,
         View.OnClickListener, View.OnLongClickListener {

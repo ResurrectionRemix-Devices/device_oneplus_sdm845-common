@@ -32,6 +32,9 @@ import java.util.List;
 
 import org.evolution.device.DeviceSettings.FileUtils;
 import org.evolution.device.DeviceSettings.thermal.ThermalUtils;
+import org.evolution.device.DeviceSettings.preferences.VibratorCallStrengthPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorNotifStrengthPreference;
+import org.evolution.device.DeviceSettings.preferences.VibratorStrengthPreference;
 
 public class Startup extends BroadcastReceiver {
 
