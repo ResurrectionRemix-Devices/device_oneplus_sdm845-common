@@ -90,8 +90,6 @@ public class DeviceSettings extends PreferenceFragment
     public static final String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
     public static final String PREF_MICROPHONE_GAIN = "microphone_gain";
     public static final String MICROPHONE_GAIN_PATH = "/sys/kernel/sound_control/mic_gain";
-    public static final String PREF_SPEAKER_GAIN = "speaker_gain";
-    public static final String SPEAKER_GAIN_PATH = "/sys/kernel/sound_control/speaker_gain";
 
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
@@ -107,7 +105,6 @@ public class DeviceSettings extends PreferenceFragment
     private Preference mThermalProfiles;
     private ProperSeekBarPreference mEarpieceGain;
     private ProperSeekBarPreference mMicrophoneGain;
-    private ProperSeekBarPreference mSpeakerGain;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -206,9 +203,6 @@ public class DeviceSettings extends PreferenceFragment
 
         mMicrophoneGain = (ProperSeekBarPreference) findPreference(PREF_MICROPHONE_GAIN);
         mMicrophoneGain.setOnPreferenceChangeListener(this);
-
-        mSpeakerGain = (ProperSeekBarPreference) findPreference(PREF_SPEAKER_GAIN);
-        mSpeakerGain.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -235,9 +229,7 @@ public class DeviceSettings extends PreferenceFragment
         } else if (preference == mEarpieceGain) {    
             FileUtils.setValue(EARPIECE_GAIN_PATH, newValue + " " + newValue); 
         } else if (preference == mMicrophoneGain) {    
-            FileUtils.setValue(MICROPHONE_GAIN_PATH, newValue + " " + newValue);             
-        } else if (preference == mSpeakerGain) {    
-            FileUtils.setValue(SPEAKER_GAIN_PATH, newValue + " " + newValue);       
+            FileUtils.setValue(MICROPHONE_GAIN_PATH, newValue + " " + newValue);             ;       
         } else {
             Constants.setPreferenceInt(getContext(), preference.getKey(), Integer.parseInt((String) newValue));
         }
