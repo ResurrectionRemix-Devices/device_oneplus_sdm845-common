@@ -90,6 +90,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String EARPIECE_GAIN_PATH = "/sys/kernel/sound_control/earpiece_gain";
     public static final String PREF_MICROPHONE_GAIN = "microphone_gain";
     public static final String MICROPHONE_GAIN_PATH = "/sys/kernel/sound_control/mic_gain";
+    public static final String KEY_SETTINGS_PREFIX = "device_setting_";
 
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
