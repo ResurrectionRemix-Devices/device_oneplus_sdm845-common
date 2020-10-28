@@ -84,9 +84,4 @@ void vendor_load_properties()
 {
 	// Load dalvik config
 	load_dalvikvm_properties();
-
-	// Common maintainer props
-	property_override("org.evolution.build_donate_url", "https://paypal.me/AnierinBliss");
-	property_override("org.evolution.build_maintainer", "Anierin Bliss");
-	property_override("org.evolution.build_support_url", "https://t.me/EvolutionXOnePlus");
 }
