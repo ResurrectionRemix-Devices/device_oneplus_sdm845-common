@@ -29,7 +29,7 @@ $(call inherit-product-if-exists, vendor/addons/oneplus/camera/config.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evolution
+    $(LOCAL_PATH)/overlay-resurrection
 
 PRODUCT_PACKAGES += \
     OnePlusIconShapeCircleOverlay \
@@ -202,10 +202,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# Wi-Fi
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ini/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # WiFi Display
 PRODUCT_PACKAGES += \

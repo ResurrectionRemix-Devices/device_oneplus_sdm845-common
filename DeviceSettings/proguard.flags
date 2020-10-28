@@ -1,3 +1,3 @@
--keep class org.evolution.device.DeviceSettings.* {
+-keep class org.resurrection.device.DeviceSettings.* {
   *;
 }
