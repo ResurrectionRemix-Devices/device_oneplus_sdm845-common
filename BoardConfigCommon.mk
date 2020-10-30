@@ -103,8 +103,11 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
-# FaceUnlock
+# Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GAPPS
+TARGET_GAPPS_ARCH := arm64
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml

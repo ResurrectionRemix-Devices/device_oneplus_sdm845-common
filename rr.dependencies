@@ -20,5 +20,11 @@
     "branch"      : "sdm845",
     "clone-depth" : "1",
     "target_path" : "vendor/addons/oneplus/camera"
+  },
+  {
+    "repository"  : "anierin.t.bliss/platform_vendor_pixelgapps",
+    "branch"      : "ten",
+    "remote"      : "gitlab",
+    "target_path" : "vendor/pixelgapps"
   }
 ]

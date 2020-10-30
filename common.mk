@@ -26,6 +26,11 @@ $(call inherit-product-if-exists, vendor/addons/google/camera/config.mk)
 # Inherit packages from vendor/addons/oneplus/camera
 $(call inherit-product-if-exists, vendor/addons/oneplus/camera/config.mk)
 
+# Inherit packages from vendor/pixelgapps
+ifeq ($(TARGET_SHIPS_GAPPS),true)
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
