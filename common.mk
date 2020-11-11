@@ -21,10 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
 # Inherit packages from vendor/addons/google/camera
-$(call inherit-product-if-exists, vendor/addons/google/camera/config.mk)
+ifeq ($(TARGET_SHIPS_GCAM),true)
+$(call inherit-product, vendor/addons/google/camera/config.mk)
+endif
 
 # Inherit packages from vendor/addons/oneplus/camera
-$(call inherit-product-if-exists, vendor/addons/oneplus/camera/config.mk)
+ifeq ($(TARGET_SHIPS_OOSCAM),true)
+$(call inherit-product, vendor/addons/oneplus/camera/config.mk)
+endif
 
 # Inherit packages from vendor/pixelgapps
 ifeq ($(TARGET_SHIPS_GAPPS),true)
