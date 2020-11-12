@@ -82,6 +82,10 @@ void load_dalvikvm_properties()
 
 void vendor_load_properties()
 {
+
+        // Common Build Fingerprint
+	property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+
 	// Load dalvik config
 	load_dalvikvm_properties();
 }
