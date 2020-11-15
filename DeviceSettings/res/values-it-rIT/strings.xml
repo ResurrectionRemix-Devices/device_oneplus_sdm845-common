@@ -15,9 +15,6 @@
     <string name="device_summary">Regola impostazioni specifiche del dispositivo</string>
     <!-- Audio -->
     <string name="audio_title">Audio</string>
-    <string name="clear_speaker_title">Pulisci altoparlante</string>
-    <string name="clear_speaker_summary">Riproduci un audio di 30 secondi per ripulire l\'altoparlante</string>
-    <string name="clear_speaker_description">Esegui questa funzione una o due volte se riscontri che il tuo altoparlante è leggermente bloccato dalla polvere. Imposta il volume multimediale al massimo.\n\nSe l\'altoparlante è fortemente bloccato, esegui questa funzione 2-5 volte mentre agiti il dispositivo con l\'altoparlante rivolto verso il basso.</string>
     <string name="earpiece_gain">Aumento auricolari (Chiamate)</string>
     <string name="microphone_gain">Aumento microfono</string>
     <!-- Display modes -->
@@ -84,28 +81,6 @@
     <string name="notification_slider_mode_vibrate">Vibrazione</string>
     <string name="notification_slider_mode_none">Normale</string>
     <string name="buttons_dashboard_summary">Impostazioni cursore notifiche</string>
-    <!-- Selinux Switch -->
-    <string name="selinux_title">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux è un insieme di modifiche del kernel e strumenti di spazio utente. Cambiare le modalità può causare effetti indesiderati. Utilizzare a proprio rischio (sarà grigio se SU non trovato!).</string>
-    <string name="selinux_mode_title">Modalità SELinux</string>
-    <string name="selinux_permissive_summary">Permissivo</string>
-    <string name="selinux_enforcing_summary">Enforcing</string>
-    <string name="selinux_persistence_title">Persiste tra i riavvii</string>
-    <string name="selinux_persistence_summary">Ripristina la modalità sepolicy sopra impostata ad ogni avvio</string>
-    <string name="selinux_permissive_toast_title">Selinux impostato su permissivo!</string>
-    <string name="selinux_enforcing_toast_title">Selinux impostato su enforcing!</string>
-    <string name="cannot_get_su">Azione fallita a causa del mancato accesso al superuser</string>
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Termico</string>
-    <string name="thermal_profiles_title">Profili termici</string>
-    <string name="thermal_summary">Regola i profili termici per app per prestazioni ottimali</string>
-    <string name="thermal_default">Predefinito</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Browser</string>
-    <string name="thermal_camera">Fotocamera</string>
-    <string name="thermal_dialer">Dialer</string>
-    <string name="thermal_gaming">Gioco</string>
-    <string name="thermal_streaming">Streaming</string>
     <!-- Vibration control -->
     <string name="vibrator_title">Vibrazione</string>
     <string name="vib_strength_title_head">Intensità di sistema</string>

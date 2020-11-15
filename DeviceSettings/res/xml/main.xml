@@ -12,19 +12,10 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <PreferenceCategory
         android:key="audio"
         android:title="@string/audio_title">
-
-        <Preference
-            android:key="clear_speaker_settings" 
-            android:icon="@drawable/ic_speaker_cleaner_icon"
-            android:title="@string/clear_speaker_title" >
-            <intent 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="org.resurrection.device.DeviceSettings.speaker.ClearSpeakerActivity"
-                android:targetPackage="org.resurrection.device.DeviceSettings.speaker" />
-        </Preference>
 
         <org.resurrection.device.DeviceSettings.preferences.SecureSettingProperSeekBarPreference
             android:defaultValue="0"
@@ -143,46 +134,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="selinux"
-        android:title="@string/selinux_title">
-
-       <Preference
-          android:summary="@string/selinux_explanation_summary"
-          android:selectable="false"/>
-
-       <SwitchPreference
-          android:key="selinux_mode"
-          android:icon="@drawable/ic_linux"
-          android:title="@string/selinux_mode_title"
-          android:summaryOn="@string/selinux_enforcing_summary"
-          android:summaryOff="@string/selinux_permissive_summary" />
-
-        <SwitchPreference
-          android:key="selinux_persistence"
-          android:icon="@drawable/ic_power"
-          android:title="@string/selinux_persistence_title"
-          android:summary="@string/selinux_persistence_summary"
-          android:defaultValue="true" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="thermal"
-        android:title="@string/thermal_title">
-
-        <Preference
-            android:key="thermal_profiles"
-            android:icon="@drawable/ic_thermal"
-            android:title="@string/thermal_profiles_title"
-            android:summary="@string/thermal_summary"
-            android:persistent="false" >
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="org.resurrection.device.DeviceSettings.thermal"
-                    android:targetClass="org.resurrection.device.DeviceSettings.thermal.ThermalActivity" />
-        </Preference>
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:title="@string/vibrator_title">
+
         <org.resurrection.device.DeviceSettings.preferences.VibratorStrengthPreference
             android:key="vib_strength"
             android:icon="@drawable/ic_vibration_icon"

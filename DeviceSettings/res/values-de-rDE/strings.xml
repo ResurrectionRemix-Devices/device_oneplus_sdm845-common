@@ -15,9 +15,6 @@
     <string name="device_summary">Geräte spezifische Einstellungen anpassen</string>
     <!-- Audio -->
     <string name="audio_title">Ton</string>
-    <string name="clear_speaker_title">Lautsprecher reinigen</string>
-    <string name="clear_speaker_summary">Spiele ein 30 Sekunden Ton um den Lautsprecher zu reinigen</string>
-    <string name="clear_speaker_description">Wenn Ihr Lautsprecher leicht durch Staub blockiert ist, führen Sie diese Funktion ein- oder zweimal aus. Stellen Sie die Medienlautstärke auf Maximum ein. \n\nWenn der Lautsprecher stark blockiert ist, führen Sie diese Funktion 2-5 Mal aus, während Sie Ihr Gerät mit dem Lautsprecher nach unten gerichtet schütteln.</string>
     <string name="earpiece_gain">Hörerverstärkung (Anrufe)</string>
     <string name="microphone_gain">Mikrofonverstärkung</string>
     <!-- Display modes -->
@@ -84,28 +81,6 @@
     <string name="notification_slider_mode_vibrate">Vibrieren</string>
     <string name="notification_slider_mode_none">Normal</string>
     <string name="buttons_dashboard_summary">Alert Slider-Einstellungen</string>
-    <!-- Selinux Switch -->
-    <string name="selinux_title">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux ist eine Gruppe von Kernel-Modifikationen und User-Space-Tools. Das Ändern von Modi kann unerwünschte Effekte verursachen. Benutzung auf eigene Gefahr (wird ausgegraut, wenn su nicht gefunden wird!).</string>
-    <string name="selinux_mode_title">SELinux-Modus</string>
-    <string name="selinux_permissive_summary">Zulässig</string>
-    <string name="selinux_enforcing_summary">Strikt</string>
-    <string name="selinux_persistence_title">Bei Neustart beibehalten</string>
-    <string name="selinux_persistence_summary">Bei jedem Start den oben festgelegten sepolicy-Modus wiederherstellen</string>
-    <string name="selinux_permissive_toast_title">Selinux auf Zulässig eingestellt!</string>
-    <string name="selinux_enforcing_toast_title">Selinux auf Strikt eingestellt!</string>
-    <string name="cannot_get_su">Aktion wegen fehlendem Superuser-Zugriff fehlgeschlagen</string>
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Thermisch</string>
-    <string name="thermal_profiles_title">Thermische Profile</string>
-    <string name="thermal_summary">Passen Sie die thermischen Profile pro App an, um eine optimale Leistung zu erzielen</string>
-    <string name="thermal_default">Standard</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Webbrowser</string>
-    <string name="thermal_camera">Kamera</string>
-    <string name="thermal_dialer">Telefon</string>
-    <string name="thermal_gaming">Spielen</string>
-    <string name="thermal_streaming">Streaming</string>
     <!-- Vibration control -->
     <string name="vibrator_title">Vibrator</string>
     <string name="vib_strength_title_head">Systemstärke</string>

@@ -15,9 +15,6 @@
     <string name="device_summary">डिवाइस विशिष्ट समायोजित करें</string>
     <!-- Audio -->
     <string name="audio_title">श्रव्य</string>
-    <string name="clear_speaker_title">स्पीकर का क्लियरिंग</string>
-    <string name="clear_speaker_summary">स्पीकर को साफ़ करने के लिए 30 सेकंड का ऑडियो चलाएं</string>
-    <string name="clear_speaker_description">इस सुविधा को एक या दो बार चलाएं यदि आप पाते हैं कि आपका स्पीकर धूल से हल्का अवरुद्ध है। मीडिया वॉल्यूम को अधिकतम पर सेट करें। \n\n यदि स्पीकर को बहुत अधिक अवरुद्ध किया गया है, तो अपने डिवाइस को नीचे की ओर स्पीकर के साथ हिलाते हुए इस सुविधा को 2-5 बार चलाएं</string>
     <string name="earpiece_gain">ईयरपीस गेन (कॉल)</string>
     <string name="microphone_gain">माइक्रोफोन का लाभ</string>
     <!-- Display modes -->
@@ -84,28 +81,6 @@
     <string name="notification_slider_mode_vibrate">कांपना</string>
     <string name="notification_slider_mode_none">साधारण</string>
     <string name="buttons_dashboard_summary">अलर्ट स्लाइडर सेटिंग्स</string>
-    <!-- Selinux Switch -->
-    <string name="selinux_title">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux कर्नेल संशोधनों और उपयोगकर्ता-स्पेस टूल्स का एक सेट है। बदलते तरीके अवांछित प्रभाव पैदा कर सकते हैं। अपने जोखिम पर उपयोग करें (यदि सु नहीं पाया गया तो ग्रे हो जाएगा!)।</string>
-    <string name="selinux_mode_title">SELinux मोड</string>
-    <string name="selinux_permissive_summary">अनुमोदक</string>
-    <string name="selinux_enforcing_summary">लागू करने</string>
-    <string name="selinux_persistence_title">रिबूट के पार रहें</string>
-    <string name="selinux_persistence_summary">प्रत्येक बूट पर उपरोक्त सेट sepolicy मोड को पुनर्स्थापित करें</string>
-    <string name="selinux_permissive_toast_title">सेलिनक्स ने अनुमेय सेट किया!</string>
-    <string name="selinux_enforcing_toast_title">Selinux से enforcing किया</string>
-    <string name="cannot_get_su">सुपरसुसर के लापता होने के कारण कार्रवाई विफल रही</string>
-    <!-- Thermal profiles -->
-    <string name="thermal_title">थर्मल</string>
-    <string name="thermal_profiles_title">थर्मल प्रोफाइल</string>
-    <string name="thermal_summary">इष्टतम प्रदर्शन के लिए प्रति-ऐप थर्मल प्रोफाइल समायोजित करें</string>
-    <string name="thermal_default">चूक</string>
-    <string name="thermal_benchmark">बेंचमार्क</string>
-    <string name="thermal_browser">ब्राउज़र</string>
-    <string name="thermal_camera">कैमरा</string>
-    <string name="thermal_dialer">डायलर</string>
-    <string name="thermal_gaming">Gaming</string>
-    <string name="thermal_streaming">स्ट्रीमिंग</string>
     <!-- Vibration control -->
     <string name="vibrator_title">कांपना</string>
     <string name="vib_strength_title_head">सिस्टम की ताकत</string>

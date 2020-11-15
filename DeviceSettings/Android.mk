@@ -17,26 +17,24 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
 
+include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PACKAGE_NAME := DeviceSettings
-
 LOCAL_USE_AAPT2 := true
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
-    androidx.preference_preference \
-    SettingsLib
-
-LOCAL_RESOURCE_DIR := \
-    $(LOCAL_PATH)/res
+    androidx.preference_preference
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     vendor.oneplus.camera.CameraHIDL-V1.0-java
+
+LOCAL_RESOURCE_DIR := \
+    $(LOCAL_PATH)/res
 
 package_resource_overlays := $(strip \
     $(wildcard $(foreach dir, $(PRODUCT_PACKAGE_OVERLAYS), \

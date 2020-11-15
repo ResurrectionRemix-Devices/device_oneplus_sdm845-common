@@ -15,9 +15,6 @@
     <string name="device_summary">Dostosuj specyficzne ustawienia urządzenia</string>
     <!-- Audio -->
     <string name="audio_title">Dźwięk</string>
-    <string name="clear_speaker_title">Wyczyść głośnik</string>
-    <string name="clear_speaker_summary">Odtwórz 30-sekundowy dźwięk, aby wyczyścić głos</string>
-    <string name="clear_speaker_description">Uruchom tę funkcję raz lub dwa razy, jeśli uważasz, że twój głośnik jest lekko zablokowany przez pył. Ustaw głośność multimediów na maksimum.\n\nJeśli głośnik jest mocno zablokowany, uruchom tę funkcję 2-5 razy potrząsając urządzeniem głośnik skierowany w dół.</string>
     <string name="earpiece_gain">Wzmocnienie zestaw słuchawkowy (połączenia)</string>
     <string name="microphone_gain">Wzmocnienie mikrofonu</string>
     <!-- Display modes -->
@@ -84,28 +81,6 @@
     <string name="notification_slider_mode_vibrate">Wibracje</string>
     <string name="notification_slider_mode_none">Normalny</string>
     <string name="buttons_dashboard_summary">Ustawienia suwaka powiadomień</string>
-    <!-- Selinux Switch -->
-    <string name="selinux_title">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux to zestaw modyfikacji jądra i narzędzi przestrzeni użytkownika. Zmiana trybów może spowodować niepożądane efekty. Używaj na własne ryzyko (jeśli SU nie zostanie znaleziony, będzie wyszarzone!).</string>
-    <string name="selinux_mode_title">Tryb SELinux</string>
-    <string name="selinux_permissive_summary">Permisywny</string>
-    <string name="selinux_enforcing_summary">Egzekwowanie</string>
-    <string name="selinux_persistence_title">Utrzymuj się po ponownym uruchomieniu</string>
-    <string name="selinux_persistence_summary">Przywróć powyższy tryb sepolicy przy każdym uruchomieniu</string>
-    <string name="selinux_permissive_toast_title">SELinux ustawiony na permisywny!</string>
-    <string name="selinux_enforcing_toast_title">SELinux ustawiony na egzekwowanie!</string>
-    <string name="cannot_get_su">Akcja nie powiodła się z powodu braku dostępu do roota</string>
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Termiczny</string>
-    <string name="thermal_profiles_title">Profile termiczne</string>
-    <string name="thermal_summary">Dostosuj profile termiczne dla każdej aplikacji dla optymalnej wydajności</string>
-    <string name="thermal_default">Domyślny</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Przeglądarka</string>
-    <string name="thermal_camera">Aparat</string>
-    <string name="thermal_dialer">Dialer</string>
-    <string name="thermal_gaming">Gra</string>
-    <string name="thermal_streaming">Strumieniowanie</string>
     <!-- Vibration control -->
     <string name="vibrator_title">Wibracje</string>
     <string name="vib_strength_title_head">Siła systemu</string>

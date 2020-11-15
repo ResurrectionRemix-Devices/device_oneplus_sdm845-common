@@ -19,6 +19,9 @@
           android:versionCode="2"
           android:versionName="2.0" >
 
+    <uses-sdk
+        android:minSdkVersion="24" />
+
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -28,15 +31,12 @@
     <protected-broadcast android:name=">org.resurrection.device.DeviceSettings.UPDATE_SLIDER_POSITION" />
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
-    <uses-sdk
-        android:minSdkVersion="24" />
-
     <application
         android:icon="@drawable/ic_settings_device"
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
 
-        <!-- Device Settings -->
+        <!-- DeviceSettings Activity -->
         <activity
             android:name=".DeviceSettingsActivity"
             android:label="@string/device_title">
@@ -56,86 +56,14 @@
         <activity android:name=".DeviceSettings" />
         <activity android:name=".KeyHandler" />
 
-        <activity
-            android:name="org.resurrection.device.DeviceSettings.PanelSettingsActivity"
-            android:exported="true"
-            android:label="@string/panel_category_title"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <receiver 
-            android:name="org.resurrection.device.DeviceSettings.Startup" 
-            android:enabled="true">
+        <!-- Boot Completed Receiver -->
+        <receiver android:name="org.resurrection.device.DeviceSettings.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <activity
-            android:name=".speaker.ClearSpeakerActivity" 
-            android:exported="false" 
-            android:label="@string/clear_speaker_title">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="org.resurrection.device.DeviceSettings.thermal.ThermalActivity"
-            android:exported="true"
-            android:label="@string/thermal_title"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="org.resurrection.device.DeviceSettings.doze.DozeSettingsActivity"
-            android:exported="true"
-            android:label="@string/ambient_display_title"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <!-- Panel Mode's tile -->
-        <service
-            android:name="org.resurrection.device.DeviceSettings.PanelModeTileService"
-            android:icon="@drawable/ic_panel_tile"
-            android:label="@string/tile_panel_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <!-- HBM tile -->
-        <service
-            android:name="org.resurrection.device.DeviceSettings.HBMModeTileService"
-            android:icon="@drawable/ic_hbm_tile"
-            android:label="@string/tile_hbm_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <!-- Auto HBM service -->
-        <service android:name="org.resurrection.device.DeviceSettings.AutoHBMService" />
-
-        <!-- DC-Dimming tile -->
+        <!-- DC-Dimming Tile -->
         <service
             android:name="org.resurrection.device.DeviceSettings.DCModeTileService"
             android:icon="@drawable/ic_dc_tile"
@@ -147,11 +75,23 @@
             </intent-filter>
         </service>
 
-        <!-- FPS overlay tile -->
+        <!-- Panel Settings Activity -->
+        <activity
+            android:name="org.resurrection.device.DeviceSettings.PanelSettingsActivity"
+            android:exported="true"
+            android:label="@string/panel_category_title"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Panel Mode's Tile -->
         <service
-            android:name=".FPSTileService"
-            android:icon="@drawable/ic_fps"
-            android:label="@string/fps_info_title"
+            android:name="org.resurrection.device.DeviceSettings.PanelModeTileService"
+            android:icon="@drawable/ic_panel_tile"
+            android:label="@string/tile_panel_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
@@ -159,11 +99,14 @@
             </intent-filter>
         </service>
 
-        <!-- Thermal profiles tile -->
+        <!-- Auto HBM Service -->
+        <service android:name="org.resurrection.device.DeviceSettings.AutoHBMService" />
+
+        <!-- HBM Tile -->
         <service
-            android:name="org.resurrection.device.DeviceSettings.thermal.ThermalTileService"
-            android:icon="@drawable/ic_thermal"
-            android:label="@string/thermal_profiles_title"
+            android:name="org.resurrection.device.DeviceSettings.HBMModeTileService"
+            android:icon="@drawable/ic_hbm_tile"
+            android:label="@string/tile_hbm_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
@@ -171,7 +114,24 @@
             </intent-filter>
         </service>
 
-        <!-- Doze tile -->
+        <!-- Doze Settings Activity -->
+        <activity
+            android:name="org.resurrection.device.DeviceSettings.doze.DozeSettingsActivity"
+            android:exported="true"
+            android:label="@string/ambient_display_title"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Doze Service -->
+        <service android:name="org.resurrection.device.DeviceSettings.doze.DozeService"
+                 android:permission="OneplusDozeService">
+        </service>
+
+        <!-- Doze Tile -->
         <service
             android:name="org.resurrection.device.DeviceSettings.doze.DozeTileService"
             android:icon="@drawable/ic_eye"
@@ -183,20 +143,21 @@
             </intent-filter>
         </service>
 
-        <!-- FPS info service -->
+        <!-- FPS Info Service -->
         <service android:name="org.resurrection.device.DeviceSettings.FPSInfoService"
                 android:exported="false">
         </service>
 
-        <!-- Doze service -->
-        <service android:name="org.resurrection.device.DeviceSettings.doze.DozeService"
-                 android:permission="OneplusDozeService">
-        </service>
-
-        <!-- Thermal service -->
+        <!-- FPS Overlay Tile -->
         <service
-            android:name=".thermal.ThermalService"
-            android:permission="ThermalService">
+            android:name=".FPSTileService"
+            android:icon="@drawable/ic_fps"
+            android:label="@string/fps_info_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
         </service>
 
         <!-- Search Provider -->

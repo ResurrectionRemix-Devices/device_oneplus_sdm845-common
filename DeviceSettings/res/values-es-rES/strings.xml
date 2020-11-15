@@ -15,9 +15,6 @@
     <string name="device_summary">Ajustar opciones específicas del dispositivo</string>
     <!-- Audio -->
     <string name="audio_title">Sonido</string>
-    <string name="clear_speaker_title">Limpiar altavoz</string>
-    <string name="clear_speaker_summary">Reproducir un audio de 30 segundos para limpiar el altavoz</string>
-    <string name="clear_speaker_description">Ejecuta esta función una o dos veces si encuentras que tu altavoz está ligeramente bloqueado por el polvo. Establece el volumen de medios al máximo.\n\nSi el altavoz está bloqueado fuertemente, ejecuta esta función 2-5 veces mientras agita tu dispositivo con el altavoz hacia abajo.</string>
     <string name="earpiece_gain">Ganancia de los auriculares (Llamadas)</string>
     <string name="microphone_gain">Ganancia del micrófono</string>
     <!-- Display modes -->
@@ -84,28 +81,6 @@
     <string name="notification_slider_mode_vibrate">Vibración</string>
     <string name="notification_slider_mode_none">Normal</string>
     <string name="buttons_dashboard_summary">Configuración de alerta deslizante</string>
-    <!-- Selinux Switch -->
-    <string name="selinux_title">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux es un conjunto de modificaciones del núcleo y herramientas de espacio de usuario. Cambiar modos puede causar efectos no deseados. Úselo bajo su propio riesgo (La opción no estará disponible si SU no se encuentra).</string>
-    <string name="selinux_mode_title">Modo SELinux</string>
-    <string name="selinux_permissive_summary">Permisivo</string>
-    <string name="selinux_enforcing_summary">Enforcing</string>
-    <string name="selinux_persistence_title">Persistir en reinicios</string>
-    <string name="selinux_persistence_summary">Restaurar el modo de sepolicy anterior en cada arranque</string>
-    <string name="selinux_permissive_toast_title">¡Selinux establecido a permisivo!</string>
-    <string name="selinux_enforcing_toast_title">¡Selinux establecido a enforcing!</string>
-    <string name="cannot_get_su">Acción fallida debido a la falta de acceso de superusuario</string>
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Térmico</string>
-    <string name="thermal_profiles_title">Perfiles térmicos</string>
-    <string name="thermal_summary">Ajustar perfiles térmicos por aplicación para un rendimiento óptimo</string>
-    <string name="thermal_default">Predeterminado</string>
-    <string name="thermal_benchmark">Benchmark</string>
-    <string name="thermal_browser">Navegador</string>
-    <string name="thermal_camera">Cámara</string>
-    <string name="thermal_dialer">Marcador</string>
-    <string name="thermal_gaming">Juegos</string>
-    <string name="thermal_streaming">Streaming</string>
     <!-- Vibration control -->
     <string name="vibrator_title">Vibrador</string>
     <string name="vib_strength_title_head">Intensidad del sistema</string>

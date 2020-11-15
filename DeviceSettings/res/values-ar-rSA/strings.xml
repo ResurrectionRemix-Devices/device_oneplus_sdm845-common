@@ -15,9 +15,6 @@
     <string name="device_summary">ضبط إعدادات الجهاز المحددة</string>
     <!-- Audio -->
     <string name="audio_title">الصوت</string>
-    <string name="clear_speaker_title">مسح مكبر الصوت</string>
-    <string name="clear_speaker_summary">تشغيل صوت 30 ثانية لمسح مكبر الصوت</string>
-    <string name="clear_speaker_description">قم بتشغيل هذه الميزة مرة أو مرتين إذا وجدت أن مكبر الصوت الخاص بك محظور بشكل طفيف بواسطة الغبار. قم بتعيين مستوى صوت الوسائط إلى الحد الأقصى.\n\nإذا تم حظر مكبر الصوت بشكل مكثف، قم بتشغيل هذه الميزة 2-5 مرات أثناء هز جهازك مع مكبر الصوت في اتجاه الأسفل.</string>
     <string name="earpiece_gain">كسب الارض (المجموعات)</string>
     <string name="microphone_gain">مكسب الميكروفون</string>
     <!-- Display modes -->
@@ -84,28 +81,6 @@
     <string name="notification_slider_mode_vibrate">اهتزاز</string>
     <string name="notification_slider_mode_none">عادي</string>
     <string name="buttons_dashboard_summary">إعدادات شريط التنبيه</string>
-    <!-- Selinux Switch -->
-    <string name="selinux_title">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux عبارة عن مجموعة من تعديلات النواة وأدوات الفضاء للمستخدمين. تغيير الأوضاع يمكن أن يسبب تأثيرات غير مرغوب فيها. الاستخدام على مسؤوليتك الخاصة (سيتم رماده إذا لم يتم العثور على su!).</string>
-    <string name="selinux_mode_title">وضع SELinux</string>
-    <string name="selinux_permissive_summary">مسموح</string>
-    <string name="selinux_enforcing_summary">إنفاذ</string>
-    <string name="selinux_persistence_title">الإستمرار عبر عمليات إعادة التشغيل</string>
-    <string name="selinux_persistence_summary">استعادة وضع تعيين السياسة في الأعلى على كل تشغيل</string>
-    <string name="selinux_permissive_toast_title">تم تعيين Selinux إلى مسموح!</string>
-    <string name="selinux_enforcing_toast_title">تم تعيين Selinux للإنفاذ!</string>
-    <string name="cannot_get_su">فشل الإجراء بسبب عدم الوصول إلى المستخدم المتميز</string>
-    <!-- Thermal profiles -->
-    <string name="thermal_title">حرارية</string>
-    <string name="thermal_profiles_title">الملامح الحرارية</string>
-    <string name="thermal_summary">ضبط الملفات الشخصية الحرارية لكل تطبيق لتحقيق الأداء الأمثل</string>
-    <string name="thermal_default">الافتراضي</string>
-    <string name="thermal_benchmark">المعيار</string>
-    <string name="thermal_browser">المتصفح</string>
-    <string name="thermal_camera">الكاميرا</string>
-    <string name="thermal_dialer">الاتصال</string>
-    <string name="thermal_gaming">ألعاب</string>
-    <string name="thermal_streaming">البث</string>
     <!-- Vibration control -->
     <string name="vibrator_title">اهتزاز</string>
     <string name="vib_strength_title_head">قوة النظام</string>
