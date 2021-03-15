@@ -35,6 +35,11 @@ ifeq ($(TARGET_SHIPS_GAPPS),true)
 $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 endif
 
+# Inherit packages from vendor/microg
+ifeq ($(TARGET_SHIPS_MICROG),true)
+$(call inherit-product, vendor/microg/microg.mk)
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
