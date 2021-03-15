@@ -86,6 +86,7 @@ PRODUCT_PACKAGES += \
     AntHalService
 
 # Audio
+TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper
