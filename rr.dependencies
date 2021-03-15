@@ -13,16 +13,17 @@
   },
   {
     "repository"  : "vendor_addons_google_camera",
+    "branch"      : "Q-v2",
     "target_path" : "vendor/addons/google/camera"
   },
   {
     "repository"  : "vendor_addons_oneplus_camera",
-    "branch"      : "sdm845",
+    "branch"      : "sdm845-v2",
     "clone-depth" : "1",
     "target_path" : "vendor/addons/oneplus/camera"
   },
   {
-    "repository"  : "anierin.t.bliss/platform_vendor_pixelgapps",
+    "repository"  : "bushcat/platform_vendor_pixelgapps",
     "branch"      : "ten",
     "remote"      : "gitlab",
     "target_path" : "vendor/pixelgapps"
