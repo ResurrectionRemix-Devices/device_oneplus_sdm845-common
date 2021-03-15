@@ -28,9 +28,9 @@
     "target_path" : "vendor/pixelgapps"
   },
   {
-    "repository": "Bush-cat/platform_vendor_microg",
-    "branch": "ten"
-    "remote": "github",
-    "target_path": "vendor/microg",
+    "repository"  : "Bush-cat/platform_vendor_microg",
+    "branch"      : "ten"
+    "remote"      : "github",
+    "target_path" : "vendor/microg",
   }
 ]

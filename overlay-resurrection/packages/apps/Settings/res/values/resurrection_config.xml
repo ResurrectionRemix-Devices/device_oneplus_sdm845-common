@@ -13,7 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Maintainer -->
-    <string name="rr_maintainer_summary">Anierin Bliss (AnierinB)</string>
+    <string name="rr_maintainer_summary">Bushcat; credits AnierinB</string>
 
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
