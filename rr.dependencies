@@ -4,8 +4,17 @@
     "target_path" : "device/oneplus/common"
   },
   {
-    "repository"  : "kernel_oneplus_sdm845",
-    "target_path" : "kernel/oneplus/sdm845"
+    "repository"  : "mcdachpappe/android_kernel_oneplus_sdm845-r2",
+    "branch"      : "mcd-custom",
+    "remote"      : "github"
+    "target_path" : "kernel/oneplus/sdm845",
+  },
+  {
+    "repository"  : "mcdachpappe/mcd-clang",
+    "branch"      : "v12",
+    "clone_depth" : "1",
+    "remote"      : "github",
+    "target_path" : "prebuilts/clang/host/linux-x86/clang-mcd"
   },
   {
     "repository"  : "proprietary_vendor_oneplus",
