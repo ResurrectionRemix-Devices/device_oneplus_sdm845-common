@@ -6,8 +6,8 @@
   {
     "repository"  : "mcdachpappe/android_kernel_oneplus_sdm845-r2",
     "branch"      : "mcd-custom",
-    "remote"      : "github"
-    "target_path" : "kernel/oneplus/sdm845",
+    "remote"      : "github",
+    "target_path" : "kernel/oneplus/sdm845"
   },
   {
     "repository"  : "mcdachpappe/mcd-clang",
@@ -39,8 +39,8 @@
   },
   {
     "repository"  : "Bush-cat/platform_vendor_microg",
-    "branch"      : "ten"
+    "branch"      : "ten",
     "remote"      : "github",
-    "target_path" : "vendor/microg",
+    "target_path" : "vendor/microg"
   }
 ]
