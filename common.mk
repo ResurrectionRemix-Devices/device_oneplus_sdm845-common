@@ -26,9 +26,7 @@ $(call inherit-product, vendor/addons/google/camera/config.mk)
 endif
 
 # Inherit packages from vendor/addons/oneplus/camera
-ifeq ($(TARGET_SHIPS_OOSCAM),true)
 $(call inherit-product, vendor/addons/oneplus/camera/config.mk)
-endif
 
 # Inherit packages from vendor/pixelgapps
 ifeq ($(TARGET_SHIPS_GAPPS),true)
